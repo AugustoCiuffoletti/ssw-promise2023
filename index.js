@@ -2,10 +2,7 @@ function myDisplayer(some) {
   document.getElementById("demo").innerHTML = some;
 }
 
-let myFunction = (x) => new Promise((myResolve, myReject) => {
-
-// some code (try to change x to 5)
-
+let slowRoot = (x) => new Promise((myResolve, myReject) => {
   if (x >= 0) {
     setTimeout(() => myResolve(Math.sqrt(x)),2000);
   } else {
@@ -13,7 +10,7 @@ let myFunction = (x) => new Promise((myResolve, myReject) => {
   }
 });
 
-myFunction(5).then(
+slowRoot(5).then(
   value => myDisplayer(value),
   error => myDisplayer(error)
 );
