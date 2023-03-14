@@ -1,5 +1,5 @@
-function myDisplayer(some) {
-  document.getElementById("demo").innerHTML = some;
+function myDisplayer(s) {
+  document.getElementById("demo").innerHTML = s;
 }
 
 let slowRoot = (x) => new Promise((myResolve, myReject) => {
