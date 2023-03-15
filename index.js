@@ -11,7 +11,7 @@ window.handler = () => {
   let x = document.getElementById('value').value;
   console.log(x);
   slowRoot(x).then(
-    (result) => (document.getElementById('demo').innerHTML = "Il risultato è "  + result),
+    (result) => (document.getElementById('demo').innerHTML = "Il risultato e' "  + result),
     (error) => (document.getElementById('demo').innerHTML = error)
   );
   document.getElementById('demo').innerHTML = 'Calcolo...';
