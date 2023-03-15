@@ -9,7 +9,6 @@ let slowRoot = (x) =>
 
 window.handler = () => {
   let x = document.getElementById('value').value;
-  console.log(x);
   slowRoot(x).then(
     (result) =>
       (document.getElementById('demo').innerHTML = "Il risultato e' " + result),
